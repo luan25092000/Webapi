@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magenest\Webapi\Api\CustomerManagementInterface"
-                type="Magenest\Webapi\Model\PostManagement"/>
+    <preference for="Magenest\Webapi\Api\CustomerRepositoryInterface"
+                type="Magenest\Webapi\Model\CustomerRepository"/>
+    <preference for="Magenest\Webapi\Api\Data\CustomerInterface"
+                type="Magenest\Webapi\Model\Data\Customer"/>
 </config>
